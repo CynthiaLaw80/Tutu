@@ -1,0 +1,57 @@
+# --- 系统文件 ---
+.DS_Store
+Thumbs.db
+*.swp
+
+# --- 嵌入式开发 (Member B: ESP32/PlatformIO/Arduino) ---
+.pio/
+.vscode/
+build/
+.gcc-flags.json
+libdeps/
+*.bin
+*.elf
+
+# --- 移动端开发 (Member B/D: Flutter/React Native) ---
+# 如果是 Flutter
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+/build/
+
+# 如果是 Android 原生
+*.iml
+.gradle/
+local.properties
+/.idea/modules.xml
+/.idea/workspace.xml
+/captures/
+.externalNativeBuild/
+.cxx/
+
+# --- 云端/后端 (Member C: Python) ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+.env
+*.log
+# 临时存储的音频文件
+/Backend/temp_audio/
+/Backend/static/recordings/
+
+# --- 硬件设计 (Member A: KiCad/Altium) ---
+*.bck
+*.kicad_pcb-bak
+*.sch-bak
+*~
+_autosave-*
+*.lck
+
+# --- 编译输出 & 压缩包 ---
+*.zip
+*.tar.gz
+*.7z
